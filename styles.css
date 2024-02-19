@@ -1,0 +1,161 @@
+@font-face {
+  font-family: norseBold;
+  src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf);
+}
+
+:root {
+  --bg-color-main: #101214;
+  --bg-color-secondary: #161A1D;
+  --primary-color: #2ABB7F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+#leftContainer {
+  background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30vw;
+  height: 100vh;
+}
+
+#logoContainer {
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 10px 0;
+  top: 8rem;
+  height: auto;
+  color: white;
+  text-align: center;
+  font-family: norseBold;
+}
+
+#odinLogo {
+  height: 10vh;
+}
+
+#odinLogoText {
+  font-size: 6em;
+  color: white;
+}
+
+footer {
+  position: fixed;
+  text-align: center;
+}
+
+#rightContainer {
+  width: 70vw;
+  background-color: var(--bg-color-main);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#headerContainer {
+  font-weight: 500;
+  padding: 50px;
+  font-size: 2rem;
+  
+}
+
+.headerText {
+  color: var(--primary-color);
+  padding: 35px;
+}
+
+#formContainer {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: var(--bg-color-secondary);
+}
+
+#formTitle {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.inputContainer>label {
+  color: var(--primary-color)
+}
+
+input {
+  background-color: var(--bg-color-main);
+  border: 1px solid #292929;
+  font-size: 1rem;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 3px;
+}
+
+#buttonContainer {
+  padding: 50px;
+}
+
+button {
+  background-color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 700;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 10px 40px;
+  color: var(--bg-color-main);
+}
+
+button:hover {
+  background-color: var(--bg-color-main);
+  color: var(--primary-color);
+}
+
+#loginContainer {
+  padding: 50px;
+  color: var(--primary-color);
+}
+
+h1 {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

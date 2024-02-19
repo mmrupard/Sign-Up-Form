@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="leftContainer">
+        <div id="logoContainer">
+          <img src="images/odin-lined.png" alt="Odin Logo" id="odinLogo" />
+          <h1 id="odinLogoText">ODIN</h1>
+        </div>
+        <footer>
+          Photo by
+          <a href="https://unsplash.com/photos/25xggax4bSA">Hailie West</a>
+        </footer>
+      </div>
+      <div id="rightContainer">
+        <div id="headerContainer">
+          <p class="headerText">
+            This is not a real online service! This is just an example form
+            created for
+            <a href="https://www.theodinproject.com">the Odin Project</a>. Look
+            at how nice it looks!
+          </p>
+          <p class="headerText">Sign up now!</p>
+        </div>
+        <form action="#">
+          <div id="formContainer">
+            <p id="formTitle">Lets do this!</p>
+            <div class="inputContainer">
+              <label for="firstName">First Name</label>
+              <input type="text" name="firstName" id="firstName" required />
+            </div>
+            <div class="inputContainer">
+              <label for="lastName">last Name</label>
+              <input type="text" name="lastName" id="lastName" />
+            </div>
+            <div class="inputContainer">
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" />
+            </div>
+            <div class="inputContainer">
+              <label for="phoneNumber">Phone Number</label>
+              <input type="text" name="phoneNumber" id="phoneNumber" />
+            </div>
+            <div class="inputContainer">
+              <label for="Password">Password</label>
+              <input type="text" name="Password" id="Password" required />
+            </div>
+            <div class="inputContainer">
+              <label for="confirmPassword">Confirm Password</label>
+              <input
+                type="text"
+                name="confirmPassword"
+                id="confirmPassword"
+                required
+              />
+            </div>
+          </div>
+          <div id="buttonContainer">
+            <button type="submit">Create Account</button>
+          </div>
+        </form>
+        <div id="loginContainer">
+          Already have an account? <a href="#">Log in</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
