@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="onChange.js" defer></script>
   </head>
   <body>
     <div id="container">
@@ -41,28 +42,35 @@
             </div>
             <div class="inputContainer">
               <label for="email">Email</label>
-              <input type="text" name="email" id="email" />
+              <input type="email" name="email" id="email" />
             </div>
             <div class="inputContainer">
               <label for="phoneNumber">Phone Number</label>
               <input type="text" name="phoneNumber" id="phoneNumber" />
             </div>
-            <div class="inputContainer">
-              <label for="Password">Password</label>
-              <input type="text" name="Password" id="Password" required />
+            <div class="inputContainer passwordContainer">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                onchange="onChange()"
+                required
+              />
             </div>
-            <div class="inputContainer">
+            <div class="inputContainer passwordContainer">
               <label for="confirmPassword">Confirm Password</label>
               <input
-                type="text"
+                type="password"
                 name="confirmPassword"
                 id="confirmPassword"
+                onchange="onChange()"
                 required
               />
             </div>
           </div>
           <div id="buttonContainer">
-            <button type="submit">Create Account</button>
+            <button type="submit" id="submitButton">Create Account</button>
           </div>
         </form>
         <div id="loginContainer">
